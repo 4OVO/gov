@@ -78,12 +78,12 @@ const slDoc = defineCollection({
 	// 文档标题，它将用于在页面的面包屑导航中显示
 	title: '申论',
 	// 手动配置侧边栏结构
-	sidebar: [
-		{ text: 'one item', link: 'jc' },
-		{ text: 'two item', link: 'two' },
-	],
+	// sidebar: [
+	// 	{ text: 'one item', link: 'jc' },
+	// 	{ text: 'two item', link: 'two' },
+	// ],
 	// 根据文件结构自动生成侧边栏
-	// sidebar: 'auto',
+	sidebar: 'auto',
 });
 
 /**
