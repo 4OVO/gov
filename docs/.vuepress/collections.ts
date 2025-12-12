@@ -63,12 +63,6 @@ const xcDoc = defineCollection({
 		title: true, // 自动生成标题
 		createTime: true, // 自动生成创建时间
 		permalink: true, // 自动生成永久链接
-		transform: (data, context, locale) => {
-			// 自定义转换
-			data;
-			console.log(data, context, locale);
-			return data;
-		},
 	},
 });
 
@@ -80,13 +74,16 @@ const slDoc = defineCollection({
 	// `dir` 所指向的目录中的所有 markdown 文件，其 permalink 需要以 `linkPrefix` 配置作为前缀
 	// 如果 前缀不一致，则无法生成侧边栏。
 	// 所以请确保  markdown 文件的 permalink 都以 `linkPrefix` 开头
-	linkPrefix: '/sl',
+	// linkPrefix: '/sl',
 	// 文档标题，它将用于在页面的面包屑导航中显示
 	title: '申论',
 	// 手动配置侧边栏结构
-	// sidebar: ['', 'foo', 'bar'],
+	sidebar: [
+		{ text: 'one item', link: 'jc' },
+		{ text: 'two item', link: 'two' },
+	],
 	// 根据文件结构自动生成侧边栏
-	sidebar: 'auto',
+	// sidebar: 'auto',
 });
 
 /**
