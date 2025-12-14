@@ -35,6 +35,8 @@ export default defineUserConfig({
 	shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
 
 	theme: plumeTheme({
+		//贡献者
+		contributors: false,
 		//水印
 		watermark: {
 			// 返回结果为 true 的将启用水印，否则禁用
