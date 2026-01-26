@@ -20,3 +20,5 @@ export default defineClientConfig({
     // app.component('CustomComponent', CustomComponent)
   },
 })
+
+import "./styles/index.css"
