@@ -4,6 +4,8 @@ externalLinkIcon: false
 config:
   - type: hero
     full: true
+    effect: tint-plate
+
     # forceDark: true
     # effect: lightning
     hero:
